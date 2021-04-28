@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+body {margin: 0px; padding: 0px; box-sizing: border-box;}
+
+h1, h2, h3, h4, h5, h6, p, a, span, form, strong, input, radio, select, checkbox, textarea, textfield, ul, li, ol { margin: 0px;
+    padding: 0px} 
+
+
+a {text-decoration: none;}
+img {border: none;}
+a, img {border: none;}
+
+
+/*html5 tag*/
+
+header, hgroup, nav, section, article, aside, figure, figcaption, audio, video, footer {margin: 0px; padding: 0px; display: block; box-sizing:border-box;}
+/*html5 tag*/
+
+
+.wrap {width: 1400px; margin: 0 auto}
+
+.checkbtn  {height: 130px;  float:right; font-size:30px; display: none }
+#check {line-height: 130px; font-size:50px;display: none}
+
+.logo  img {line-height:130px; height: 130px}
+
+nav	{width: 100%; float: left; line-height: 130px }
+nav ul	{ list-style: none; margin: 0px; padding: 0px;line-height: 130px;float:right; }
+nav ul li	{ display:inline; }
+nav ul li a	{ color: #222; font-size: 18px; padding: 0 10px; font-family: arial }
+
+.icon {}
+.icon  a {display:none; }
+
+@media (max-width: 800px)
+
+
+{
+.wrap {width: 90%; margin: 0 auto}
+
+.checkbtn  {height: 130px;  float:right; font-size:30px; display: block; cursor: pointer; }
+#check {line-height: 130px; font-size:50px;display: none}
+
+.logo  img {line-height:130px; height: 130px}
+
+nav	{width: 100%; float: left; line-height: 130px; height :100vh;}
+nav ul	{ list-style: none; margin: 0px; padding: 0px; position: fixed; line-height: 130px;  float:none; width: 100%; text-align: center; transition: all 0.5s ease;  left:-100%; }
+nav ul li	{ display:block; float:none;  text-align: center; line-height: 80px; transition: all 0.5s ease}
+nav ul li a	{ color: #222; font-size: 18px; padding: 0 10px; font-family: arial  }
+
+
+
+
+#check:checked ~ ul {left: 0;}
+
+
+
+}
+
+

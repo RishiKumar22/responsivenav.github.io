@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+body {margin: 0px; padding: 0px; box-sizing: border-box;}
+
+h1, h2, h3, h4, h5, h6, p, a, span, form, strong, input, radio, select, checkbox, textarea, textfield, ul, li, ol { margin: 0px;
+    padding: 0px} 
+
+
+a {text-decoration: none;}
+img {border: none;}
+a, img {border: none;}
+
+
+/*html5 tag*/
+
+header, hgroup, nav, section, article, aside, figure, figcaption, audio, video, footer {margin: 0px; padding: 0px; display: block; box-sizing:border-box;}
+/*html5 tag*/
+
+.wrap {width: 1400px; margin:0 auto;}
+
+.top { width: 100%; float: left; padding: 20px 0;}
+.top .logo { color: #222; font-size: 20px; font-family: Arial, Helvetica, sans-serif; text-transform: uppercase; line-height: 80px;}
+#check { line-height: 80px; font-size: 20px; display: none;}
+.top .checkbtn   { font-size: 38px; display:none ; float: right; line-height: 80px;}
+.top nav {width: 100%; float: left; height: 80px;}
+.top nav ul { list-style: none; margin: 0px; padding: 0px; float: right;}
+.top nav ul li { display: inline;  line-height: 80px; }
+.top nav ul li a { color: #222; font-family: Arial, Helvetica, sans-serif; font-size: 20px; padding: 0 10px;}
+
+
+@media (max-width:800px)
+
+{
+    .wrap {width: 90%; margin: 0 auto;}
+
+.top { width: 100%; float: left; padding: 20px 0;}
+.top .logo { color: #222; font-size: 20px; font-family: Arial, Helvetica, sans-serif; text-transform: uppercase; line-height: 80px;}
+#check { line-height: 80px; font-size: 20px; display: none;}
+.top .checkbtn   { font-size: 38px; display:block ; float: right; line-height: 80px;cursor: pointer;}
+.top nav {width: 100%; float: left; height: 80px;}
+.top nav ul { list-style: none; margin: 0px; padding: 90px 0 0 0px; float: none; position: fixed; left: -100%; width: 100%; transition: all 0.5s ease; height: 100vh; background: #000;  }
+.top nav ul li { display:block;  line-height: 80px; text-align: center; float: none; color: ; }
+
+.top nav ul li:hover { background: #f2f2f2; }
+
+.top nav ul li a { color: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 20px; padding: 0 0; display: block; }
+.top nav ul li a:hover { color:#222; }
+#check:checked ~ ul {left: 0;}
+
+
+
+
+
+}
